@@ -459,7 +459,7 @@
               <i class="fa fa-edit"></i><span>&nbsp;&nbsp;</span>:
 			</span>
                <span class="post-meta-item-text">字数总计：</span>		  
-		   <span class="post-count"> 901 <span class="post-meta-item-text">个字</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		   <span class="post-count"> 891 <span class="post-meta-item-text">个字</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 		   <span class="post-meta-item-icon">
               <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;</span>:
 			</span>
@@ -472,19 +472,16 @@
 	  
       
         <p>郭霖《Android第一行代码》学习笔记<br>时间：2015.08.08</p>
-<p>git config –global user.name “sure”<br>git config –global user.email “sure0kuaile”<br>配置完成后你还可以使用同样的命令来查看是否配置成功，只需要将最后的名字和邮箱地址去掉即可。</p>
+<p>git config –global user.name “sure”<br>git config –global user.email “sure0kuaile#gmail.com”<br>配置完成后你还可以使用同样的命令来查看是否配置成功，只需要将最后的名字和邮箱地址去掉即可。</p>
 <h3 id="新建代码仓库"><a href="#新建代码仓库" class="headerlink" title="新建代码仓库"></a>新建代码仓库</h3><p>项目目录下<br>git init</p>
 <p>ls -al 查看目录文件.git文件夹<br>删除本地仓库，只需要删除这个文件夹就可以了。</p>
 <h3 id="提交本地代码"><a href="#提交本地代码" class="headerlink" title="提交本地代码"></a>提交本地代码</h3><p>代码仓库建立完之后就可以提交代码了，其实提交代码的方法也非常简单，只需要使用 add 和 commit 命令就可以了。add 是用于把想要提交的代码先添加进来，而 commit 则是真 正地去执行提交操作。比如我们想添加 AndroidManifest.xml 文件，就可以输入如下命令：<br>git add AndroidManifest.xml<br>这是添加单个文件的方法，那如果我们想添加某个目录呢？其实只需要在 add后面加上 目录名就可以了。比如将整个 src 目录下的所有文件都进行添加，就可以输入如下命令：<br>git add src<br>可是这样一个个地添加感觉还是有些复杂，有没有什么办法可以一次性就把所有的文件 都添加好呢？当然可以，只需要在 add 的后面加上一个点，就表示添加所有的文件了，命令如下所示：<br>git add .<br>现在 BroadcastBestPractice项目下所有的文件都已经添加好了，我们可以来提交一下了， 输入如下命令：<br>git commit -m “First commit.”<br>注意在 commit 命令的后面我们一定要通过-m 参数来加上提交的描述信息，没有描述信 息的提交被认为是不合法的。这样所有的代码就已经成功提交了！</p>
-<h3 id="分支代码维护"><a href="#分支代码维护" class="headerlink" title="分支代码维护"></a>分支代码维护</h3><p>git branch -a 查看当前版本库中所有的分支<br>git branch version 1.0 创建一个分支version1.0</p>
-<p>*代表当前代码所在的分支<br>git checkout version1.0 切换分支</p>
+<h3 id="分支代码维护"><a href="#分支代码维护" class="headerlink" title="分支代码维护"></a>分支代码维护</h3><p>git branch -a 查看当前版本库中所有的分支<br>git branch version1.0 创建一个分支version1.0<br>git checkout version1.0 切换分支</p>
 <p>分支上修复bug后，合并到主干线，代码冲突问题需要手动解决<br>git checkout master<br>git merge version1.0</p>
 <p>不需要分支时，予以删除<br>git branch -D version1.0</p>
 <h3 id="团队协作开发"><a href="#团队协作开发" class="headerlink" title="团队协作开发"></a>团队协作开发</h3><p>经常从远程版本库中获取最新代码的习惯<br>git clone  <a href="https://github.com/exmaple/test.git" target="_blank" rel="external">https://github.com/exmaple/test.git</a></p>
 <p>本地修改的内容同步 到远程版本库<br>git push origin master<br>其中 origin 部分指定的是远程版本库的 Git 地址，master 部分指定的是同步到哪一个分支上，上述命令就完成了将本地代码同步到 <a href="https://github.com/exmaple/test.git" target="_blank" rel="external">https://github.com/exmaple/test.git</a> 这个版本库的master分支上的功能。</p>
-<p>将远程版本库中的修改同步到本地，有2种方法，fetch 和 pull<br>git fetch origin master<br>同步下来的代码并不会合并到任何分支上去，而是会存放在到一个 origin/master 分支上.</p>
-<p>这时我们可以通过 diff 命令来查看远程版本库上到底修改了哪些东西：<br>git diff origin/master</p>
-<p>之后再调用 merge 命令将 origin/master 分支上的修改合并到主分支上即可，如下所示：<br>git merge origin/master</p>
+<p>将远程版本库中的修改同步到本地，有2种方法，fetch 和 pull<br>git fetch origin master<br>同步下来的代码并不会合并到任何分支上去，而是会存放在到一个 origin/master 分支上.<br>这时我们可以通过 diff 命令来查看远程版本库上到底修改了哪些东西：<br>git diff origin/master<br>之后再调用 merge 命令将 origin/master 分支上的修改合并到主分支上即可，如下所示：<br>git merge origin/master</p>
 <p>而 pull 命令则是相当于将 fetch 和 merge 这两个命令放在一起执行了，它可以从远程版本库上获取最新的代码并且合并到本地，用法如下所示：<br>git pull origin master</p>
 <p>Caching your GitHub password in Git 免除每次输入密码<br><code>git config --global credential.helper wincred</code></p>
 
