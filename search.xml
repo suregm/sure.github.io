@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[luffy's smile]]></title>
     <url>%2F2018%2F02%2F21%2Fluffy-s-smile%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[『引力』，之于物质是为『吸引』，之于感情是为『牵挂』。]]></content>
   </entry>
   <entry>
     <title><![CDATA[152 年，不再见]]></title>
@@ -208,8 +208,8 @@
       </categories>
       <tags>
         <tag>JAVA</tag>
-        <tag>JDBC</tag>
         <tag>SQL</tag>
+        <tag>JDBC</tag>
       </tags>
   </entry>
   <entry>
