@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[不要迟到]]></title>
-    <url>%2F2019%2F06%2F12%2FDo-Not-Be-Late%2F</url>
+    <url>%2F2019%2F06%2F12%2FHey-Do-Not-Be-Late%2F</url>
     <content type="text"><![CDATA[不要等到丢失了才迟到地想起。 一个手残操作缘于一个脑海里蹦出来的清奇想法：Github Pages从公开设为私有。 Github Pages从公开设为私有 ∨ 然后电脑使用的手机热点，导致访问GoMX.win博客地址时，除了首页其他页面都打不开了 ∨ 检查万网域名解析，发现跳转到阿里云，结果登录不了 ∨ 发现非邮箱帐号，通过域名找回登录了，已变成非实名认证 ∨ 16年身份证过期新办理，现在 .win 域名根据政策无法进行实名认证，何时恢复等通知 ∨ 未实名所有者的域名暂停解析，以为个人博客就此404了 ∨ 手机访问博客发现正常，然后记录下这篇博客，尝试用 hexo d 发布到 GoMX.win ∨ 提示 git@git.coding.net 权限拒绝，检查发现是3月份本地更新了 git 密钥公钥 ∨ coding.net添加公钥时页面跳转到 dev.tencent.com ，看来是被腾讯收购了 ∨ deploy repository 做同步修改推送ok，发现 WebIDE.anycodes.cn 无法访问 ∨ 继而发现 anycodes.cn 已有帐号已无法登录 ∨ 还好博客访问正常 ∨ 还好明天早上天会亮 生活在互联网时代，有些服务标榜永久有效、永远免费、终身支持，但沧海桑田时过境迁，不准哪天就突然消失在了记忆深处。所以做好备份非常有必要，重要的人或事，请一定不要迟到。 相关工具/APP推荐： 记录笔记：印象笔记 记录密码：Lastpass 运动记录：咕咚 / 行者 PC桌面剪切板：Ditto 记录历史：git / github 记录心率：小米手环 / Runtastic Heart Rate 记录感动：用心每天]]></content>
   </entry>
   <entry>
