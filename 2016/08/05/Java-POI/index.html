@@ -1,182 +1,71 @@
-<!doctype html>
-
-
-
-  
-
-
-<html class="theme-next mist use-motion">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"gomx.win","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"appID":"XK3Y5ZO3HY","apiKey":"36d803acdf2fba680a667fd64d170761","indexName":"GoMX","hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|console:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="JAVA,POI,EXCEL," />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-  <meta property="fb:admins" content="sureGM" />
-  <meta property="fb:app_id" content="1048555265233099" />
-
-
-
-<meta name="description" content="通过实例来学习吧。">
+  <meta name="description" content="通过实例来学习吧。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java POI">
-<meta property="og:url" content="http://GoMX.win/2016/08/05/Java-POI/index.html">
+<meta property="og:url" content="http://gomx.win/2016/08/05/Java-POI/index.html">
 <meta property="og:site_name" content="deepBLUE">
 <meta property="og:description" content="通过实例来学习吧。">
-<meta property="og:updated_time" content="2016-08-04T16:18:10.000Z">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2016-08-04T16:18:10.000Z">
+<meta property="article:modified_time" content="2016-08-04T16:18:10.000Z">
+<meta property="article:author" content="sureGM">
+<meta property="article:tag" content="JAVA">
+<meta property="article:tag" content="POI">
+<meta property="article:tag" content="EXCEL">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java POI">
-<meta name="twitter:description" content="通过实例来学习吧。">
+
+<link rel="canonical" href="http://gomx.win/2016/08/05/Java-POI/">
 
 
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: 'Author'
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
   };
 </script>
 
-
-
-
-  <link rel="canonical" href="http://GoMX.win/2016/08/05/Java-POI/"/>
-
-  <title> Java POI | deepBLUE </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
+  <title>Java POI | deepBLUE</title>
   
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1048555265233099',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=googleca9c6b386bd60fa4"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'googleca9c6b386bd60fa4');
+      }
+    </script>
 
 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'googleca9c6b386bd60fa4', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
-  <script type="text/javascript">
+  <script>
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?763178df117ad558c8c5e839f64b4330";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//tajs.qq.com/stats?sId=57163799";
+      hm.src = "https://hm.baidu.com/hm.js?763178df117ad558c8c5e839f64b4330";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -185,563 +74,389 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-  
-  
-    
-  
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta custom-logo">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-<!--  
-	  <span class="logo-line-before"><i></i></span>
-	  <span class="site-title">deepBLUE</span>
-      <span class="logo-line-after"><i></i></span>
--->
-	  <img src="/images/logo.jpg" width="80" style="display: inline"/>
-	</a>
-	<a href="http://gomx.win/WebIDE"  class="brand" rel="start">
-	  <img src="/images/Sabo.png" width="55" style="display: inline"/>
-    </a>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
-  <p class="site-subtitle">Be the blue whale</p>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">deepBLUE</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Be the blue whale</p>
+      <a>
+        <img class="custom-logo-image" src="/images/sure.jpg" alt="deepBLUE">
+      </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
+
+
 
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-tech">
-          <a href="/categories/tech" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
-            
-            Tech
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/tech/" rel="section"><i class="fa fa-code fa-fw"></i>Tech</a>
+
+  </li>
         <li class="menu-item menu-item-diary">
-          <a href="/categories/diary" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-edit"></i> <br />
-            
-            Diary
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/diary/" rel="section"><i class="fa fa-edit fa-fw"></i>Diary</a>
+
+  </li>
         <li class="menu-item menu-item-books">
-          <a href="/categories/books" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
-            
-            Books
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/books/" rel="section"><i class="fa fa-book fa-fw"></i>Books</a>
+
+  </li>
         <li class="menu-item menu-item-music">
-          <a href="/music" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-music"></i> <br />
-            
-            Music
-          </a>
-        </li>
-      
-        
+
+    <a href="/music/" rel="section"><i class="fa fa-music fa-fw"></i>Music</a>
+
+  </li>
         <li class="menu-item menu-item-journey">
-          <a href="/categories/journey" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-camera-retro"></i> <br />
-            
-            Journey
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-friends">
-          <a href="/friends" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-group"></i> <br />
-            
-            Friends
-          </a>
-        </li>
-      
 
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="#" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            Search
-          </a>
-        </li>
-      
-    </ul>
-  
+    <a href="/categories/journey/" rel="section"><i class="fa fa-camera-retro fa-fw"></i>Journey</a>
 
-  
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
 </nav>
 
- </div>
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content post posts-expand">
             
 
-  <div id="posts" class="posts-expand">
     
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://gomx.win/2016/08/05/Java-POI/">
 
-  
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/sure.png">
+      <meta itemprop="name" content="sureGM">
+      <meta itemprop="description" content="LIFE IS SHORT. LOVE WHAT YOU LOVED.">
+    </span>
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="deepBLUE">
+    </span>
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                Java POI
-              
-            
-          </h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          Java POI
+        </h1>
 
         <div class="post-meta">
-	
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-08-05T00:18:10+08:00" content="Aug 05 2016, 32nd Fri">
-              Aug 05 2016, 32nd Fri
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-open"></i>
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: Aug 05 2016, 32nd Fri 00:18:10:000" itemprop="dateCreated datePublished" datetime="2016-08-05T00:18:10+08:00">Aug 05 2016, 32nd Fri</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/tech/" itemprop="url" rel="index">
-                    <span itemprop="name">tech</span>
-                  </a>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">tech</span></a>
                 </span>
-
-                
-                
                   , 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/tech/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
                 </span>
-
-                
-                
-
-              
             </span>
-          
-		  
-		  
-			  &nbsp; | &nbsp;
-			  <span class="post-meta-item-icon">
-                <i class="fa fa-tags"></i>
-              </span>
-			   
-				<a href="/tags/JAVA/" rel="tag">#JAVA</a>
-				
-				
-                
-                  &nbsp;
-                
-				
-			   
-				<a href="/tags/POI/" rel="tag">#POI</a>
-				
-				
-                
-                  &nbsp;
-                
-				
-			   
-				<a href="/tags/EXCEL/" rel="tag">#EXCEL</a>
-				
-				
-                
-				
-			  
-		  
-<!--
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/05/Java-POI/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/08/05/Java-POI/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
 
           
-            &nbsp; | &nbsp;
-            <div class="fb-like" data-layout="button_count" data-share="true"></div>
-          
-
-          
-          
--->		  
-          
-			  &nbsp; | &nbsp;              
-			  <span class="page-pv"><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
-              <span class="post-meta-item-text">Visitors </span>
-              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
               </span>
-          		  
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
         </div>
       </header>
+
     
-	
-	<hr style="height: 0px; border: none; border-top: 1px solid #eee;" />
-
+    
+    
     <div class="post-body" itemprop="articleBody">
-	
-      
-      
 
-	  <div>
-	    
-	      <blockquote class="blockquote-left">
-			<span class="post-meta-item-icon">
-              <i class="fa fa-edit"></i><span>&nbsp;&nbsp;</span>:
-			</span>
-               <span class="post-meta-item-text">字数总计：</span>		  
-		   <span class="post-count"> 1,809 <span class="post-meta-item-text">个字</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-		   <span class="post-meta-item-icon">
-              <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;</span>:
-			</span>
-               <span class="post-meta-item-text">阅读时长：</span>
-		    <span class="post-count"> 10 <span class="post-meta-item-text">分钟</span></span>		
-		  </blockquote>
-		  <hr style="height: 0px; border: none; border-top: 1px dashed #eee" />
-	    
-	  </div>
-	  
       
         <p>通过实例来学习吧。</p>
 <a id="more"></a>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div><div class="line">430</div><div class="line">431</div><div class="line">432</div><div class="line">433</div><div class="line">434</div><div class="line">435</div><div class="line">436</div><div class="line">437</div><div class="line">438</div><div class="line">439</div><div class="line">440</div><div class="line">441</div><div class="line">442</div><div class="line">443</div><div class="line">444</div><div class="line">445</div><div class="line">446</div><div class="line">447</div><div class="line">448</div><div class="line">449</div><div class="line">450</div><div class="line">451</div><div class="line">452</div><div class="line">453</div><div class="line">454</div><div class="line">455</div><div class="line">456</div><div class="line">457</div><div class="line">458</div><div class="line">459</div><div class="line">460</div><div class="line">461</div><div class="line">462</div><div class="line">463</div><div class="line">464</div><div class="line">465</div><div class="line">466</div><div class="line">467</div><div class="line">468</div><div class="line">469</div><div class="line">470</div><div class="line">471</div><div class="line">472</div><div class="line">473</div><div class="line">474</div><div class="line">475</div><div class="line">476</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">package</span> bitBeat.QCC;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.apache.poi.ss.usermodel.*;</div><div class="line"><span class="keyword">import</span> org.apache.poi.ss.usermodel.Font;</div><div class="line"><span class="keyword">import</span> org.apache.poi.ss.util.CellRangeAddress;</div><div class="line"><span class="keyword">import</span> org.apache.poi.xssf.usermodel.*;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.awt.Color;</div><div class="line"><span class="keyword">import</span> java.io.File;</div><div class="line"><span class="keyword">import</span> java.io.FileInputStream;</div><div class="line"><span class="keyword">import</span> java.io.FileOutputStream;</div><div class="line"><span class="keyword">import</span> java.io.InputStream;</div><div class="line"><span class="keyword">import</span> java.util.ArrayList;</div><div class="line"><span class="keyword">import</span> java.util.HashMap;</div><div class="line"><span class="keyword">import</span> java.util.List;</div><div class="line"><span class="keyword">import</span> java.util.Map;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"> * 感谢2015.11工作上接到的任务：开发一个工具，以处理数据库里获取的数据与本地Excel表格的数据并进行对比。</div><div class="line"> * 遂由此接触了JDBC，POI，XML解析，并且实践了swing界面。</div><div class="line"> * Created by sure GM on 2016/8/3 23:43.</div><div class="line"> */</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">POI</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line"></div><div class="line">        File file = <span class="keyword">new</span> File(<span class="string">"D://yyzx.xlsx"</span>);</div><div class="line">        InputStream is = <span class="keyword">new</span> FileInputStream(file); <span class="comment">// 获取输入流</span></div><div class="line"><span class="comment">//      Workbook workbook = WorkbookFactory.create(is); // 这种方式 Excel 2003/2007/2010 都可以处理</span></div><div class="line">        XSSFWorkbook wb = <span class="keyword">new</span> XSSFWorkbook(is); <span class="comment">// 2007格式XSSF，2003格式HSSF</span></div><div class="line"></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> numSheet = <span class="number">0</span>; numSheet &lt; wb.getNumberOfSheets(); numSheet++) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="number">0</span> == wb.getSheetAt(numSheet).getPhysicalNumberOfRows()) &#123;</div><div class="line">                <span class="keyword">continue</span>;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                XSSFSheet sheet = wb.getSheetAt(numSheet);</div><div class="line"></div><div class="line">                <span class="comment">// 合并的单元格去合并</span></div><div class="line">                cellMergedCancel(sheet);</div><div class="line"></div><div class="line">                <span class="comment">// 空单元格填充</span></div><div class="line">                cellFillDown(sheet);</div><div class="line"></div><div class="line">                <span class="comment">// 删除标记有删除线的行</span></div><div class="line">                deleteStrikeRows(sheet);</div><div class="line"></div><div class="line">                <span class="comment">// 单元格内换行拆分</span></div><div class="line">                cellNewlineCancel(sheet);</div><div class="line"></div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> numRow = <span class="number">0</span>; numRow &lt; sheet.getLastRowNum(); numRow++) &#123;</div><div class="line">                    <span class="keyword">if</span> (<span class="number">0</span> == sheet.getRow(numRow).getPhysicalNumberOfCells()) &#123;</div><div class="line">                        <span class="keyword">continue</span>;</div><div class="line">                    &#125; <span class="keyword">else</span> &#123;</div><div class="line">                        XSSFRow row = sheet.getRow(numRow);</div><div class="line">                        <span class="keyword">for</span> (<span class="keyword">int</span> numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</div><div class="line">                            XSSFCell cell = row.getCell(numCell);</div><div class="line">                            String cellValue = Function.getStringNumberCellValue(cell);</div><div class="line">                        &#125;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        FileOutputStream os = <span class="keyword">new</span> FileOutputStream(<span class="string">"D://yyzx.xlsx"</span>);</div><div class="line">        wb.write(os);</div><div class="line">        os.close();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 返回构造列标题的列索引</div><div class="line">     * <span class="doctag">@param</span> sheet</div><div class="line">     * <span class="doctag">@return</span></div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ArrayList&lt;Integer&gt; <span class="title">HeaderList</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</div><div class="line">        ArrayList&lt;Integer&gt; headerList = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</div><div class="line">        Record record = <span class="keyword">new</span> Record();</div><div class="line">        String[] recordArray = <span class="keyword">new</span> String[]&#123;record.getColHeaderName0(), record.getColHeaderName1(), record.getColHeaderName2(), record.getColHeaderName3(), record.getColHeaderName4()&#125;;</div><div class="line">        <span class="keyword">int</span> colIndex = -<span class="number">1</span>;</div><div class="line"></div><div class="line">        XSSFRow row = sheet.getRow(<span class="number">0</span>);</div><div class="line">        <span class="keyword">for</span> (String recordItem : recordArray) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</div><div class="line">                <span class="keyword">if</span> (Function.contains_GoMX(Function.getStringNumberCellValue(row.getCell(numCell)), recordItem)) &#123;</div><div class="line">                    colIndex = numCell;</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">return</span> headerList;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 合并的单元格去合并</div><div class="line">     * <span class="doctag">@param</span> sheet</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">cellMergedCancel</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> numMerge = sheet.getNumMergedRegions();</div><div class="line">        <span class="keyword">while</span> (numMerge &gt; <span class="number">0</span>) &#123;</div><div class="line">            CellRangeAddress region = sheet.getMergedRegion(numMerge - <span class="number">1</span>);</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">null</span> != region) &#123;</div><div class="line">                XSSFRow row = sheet.getRow(region.getFirstRow());</div><div class="line">                XSSFCell cell = row.getCell(region.getFirstColumn());</div><div class="line">                String value = Function.getStringNumberCellValue(cell);</div><div class="line">                sheet.removeMergedRegion(numMerge - <span class="number">1</span>);</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = region.getFirstRow(); i &lt;= region.getLastRow(); i++) &#123;</div><div class="line">                    cell = sheet.getRow(i).getCell(region.getFirstColumn());</div><div class="line">                    cell.setCellValue(value);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            numMerge = sheet.getNumMergedRegions();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 单元格向下填充</div><div class="line">     * <span class="doctag">@param</span> sheet</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">cellFillDown</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; sheet.getRow(<span class="number">0</span>).getLastCellNum(); j++) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; sheet.getLastRowNum(); i++) &#123;</div><div class="line">                XSSFRow row = sheet.getRow(i);</div><div class="line">                XSSFCell cell = row.getCell(j);</div><div class="line">                <span class="keyword">if</span> (Function.getStringNumberCellValue(cell) != <span class="keyword">null</span> &amp;&amp; !Function.getStringNumberCellValue(cell).equals(<span class="string">""</span>)) &#123;</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125; <span class="keyword">else</span> &#123;</div><div class="line">                    cell.setCellValue(Function.getStringNumberCellValue(sheet.getRow(i - <span class="number">1</span>).getCell(j)));</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 删除标记有删除线的行</div><div class="line">     * <span class="doctag">@param</span> sheet</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">deleteStrikeRows</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> numRow = <span class="number">0</span>; numRow &lt; sheet.getLastRowNum(); numRow++) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="number">0</span> == sheet.getRow(numRow).getPhysicalNumberOfCells()) &#123;</div><div class="line">                <span class="keyword">continue</span>;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                XSSFRow row = sheet.getRow(numRow);</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</div><div class="line">                    XSSFCell cell = (XSSFCell) row.getCell(numCell);</div><div class="line">                    XSSFCellStyle style = cell.getCellStyle();</div><div class="line">                    XSSFFont font = style.getFont();</div><div class="line">                    <span class="keyword">boolean</span> isStrikeout = font.getStrikeout();</div><div class="line"></div><div class="line">                    <span class="keyword">if</span> (isStrikeout) &#123;</div><div class="line">                        sheet.removeRow(row);</div><div class="line">                        sheet.shiftRows(numRow + <span class="number">1</span>, sheet.getLastRowNum(), -<span class="number">1</span>);</div><div class="line">                        numRow--;   <span class="comment">// 避免跳行</span></div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 单元格内换行拆分，形成多行，保证每行单元格内值唯一</div><div class="line">     * <span class="doctag">@param</span> sheet</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">cellNewlineCancel</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</div><div class="line">        List&lt;String&gt; valueList = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line"></div><div class="line">        <span class="keyword">int</span> colIndex_IndiGrpID = <span class="number">5</span>;</div><div class="line"></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> numRow = <span class="number">0</span>; numRow &lt; sheet.getLastRowNum(); numRow++) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="number">0</span> == sheet.getRow(numRow).getPhysicalNumberOfCells()) &#123;</div><div class="line">                <span class="keyword">continue</span>;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                XSSFRow row = sheet.getRow(numRow);</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</div><div class="line">                    XSSFCell cell = (XSSFCell) row.getCell(numCell);</div><div class="line">                    String value = Function.getStringNumberCellValue(cell);</div><div class="line"></div><div class="line">                    <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= count; i++) &#123;</div><div class="line">                        <span class="keyword">if</span> (value.contains(<span class="string">"\n"</span>)) &#123;</div><div class="line">                            <span class="keyword">int</span> index = value.indexOf(<span class="string">"\n"</span>);</div><div class="line">                            valueList.add(value.substring(<span class="number">0</span>, index));</div><div class="line">                            value = value.replace(valueList.get(count) + <span class="string">"\n"</span>, <span class="string">""</span>);</div><div class="line">                        &#125; <span class="keyword">else</span> &#123;</div><div class="line">                            valueList.add(value);</div><div class="line">                        &#125;</div><div class="line">                    &#125;</div><div class="line"></div><div class="line">                    <span class="comment">// 插入行</span></div><div class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; count; j++) &#123;</div><div class="line">                        sheet.shiftRows(numRow + j + <span class="number">1</span>, sheet.getLastRowNum(), +<span class="number">1</span>);</div><div class="line">                        sheet.createRow(numRow + j + <span class="number">1</span>);</div><div class="line"></div><div class="line">                        <span class="keyword">for</span> (numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</div><div class="line">                            sheet.getRow(numRow + j + <span class="number">1</span>).createCell(numCell).setCellValue(row.getCell(numCell).getStringCellValue());</div><div class="line">                        &#125;</div><div class="line"></div><div class="line">                        sheet.getRow(numRow + j + <span class="number">1</span>).getCell(colIndex_IndiGrpID).setCellValue(valueList.get(j + <span class="number">1</span>));</div><div class="line">                    &#125;</div><div class="line">                    row.getCell(colIndex_IndiGrpID).setCellValue(valueList.get(<span class="number">0</span>));</div><div class="line">                &#125;</div><div class="line"></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 设置单元格格式</div><div class="line">     * <span class="doctag">@param</span> wb</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">createStyle</span><span class="params">(XSSFWorkbook wb)</span> </span>&#123;</div><div class="line">        XSSFSheet sheet = wb.createSheet(<span class="string">"Create Cell Style"</span>);</div><div class="line"></div><div class="line">        <span class="comment">// 设置单元格字体格式</span></div><div class="line">        XSSFRow rowFont = sheet.createRow(<span class="number">0</span>);</div><div class="line">        XSSFCell cellFont = rowFont.createCell(<span class="number">0</span>);</div><div class="line">        cellFont.setCellValue(<span class="string">"Font Style"</span>);</div><div class="line">        <span class="comment">// 创建单元格样式对象</span></div><div class="line">        XSSFCellStyle styleFont = (XSSFCellStyle) wb.createCellStyle();</div><div class="line">        <span class="comment">// 创建字体对象</span></div><div class="line">        Font font = wb.createFont();</div><div class="line">        font.setItalic(<span class="keyword">true</span>);</div><div class="line">        font.setColor(Font.COLOR_RED);</div><div class="line">        font.setFontHeightInPoints((<span class="keyword">short</span>)<span class="number">22</span>);</div><div class="line">        font.setFontName(<span class="string">"XHei"</span>);</div><div class="line">        font.setUnderline(Font.U_DOUBLE);   <span class="comment">// 添加（Font.U_SINGLE单条下划线 / Font.U_DOUBLE双条下划线）</span></div><div class="line">        font.setStrikeout(<span class="keyword">true</span>);</div><div class="line">        <span class="comment">// 应用格式</span></div><div class="line">        styleFont.setFont(font);</div><div class="line">        cellFont.setCellStyle(styleFont);</div><div class="line"></div><div class="line">        <span class="comment">// 设置单元格自动换行格式</span></div><div class="line">        XSSFRow rowWrap = sheet.createRow(<span class="number">1</span>);</div><div class="line">        XSSFCell cellWrap = rowFont.createCell(<span class="number">1</span>);</div><div class="line">        cellWrap.setCellValue(<span class="string">"Wrap Style"</span>);</div><div class="line">        <span class="comment">// 创建单元格样式对象</span></div><div class="line">        XSSFCellStyle styleWrap = (XSSFCellStyle)wb.createCellStyle();</div><div class="line">        styleWrap.setWrapText(<span class="keyword">true</span>);</div><div class="line">        cellWrap.setCellStyle(styleWrap);</div><div class="line"></div><div class="line">        <span class="comment">// 设置单元格边框格式</span></div><div class="line">        XSSFRow rowBorder = sheet.createRow(<span class="number">2</span>);</div><div class="line">        XSSFCell cellBorder = rowBorder.createCell(<span class="number">2</span>);</div><div class="line">        cellBorder.setCellValue(<span class="string">"Border Style"</span>);</div><div class="line">        <span class="comment">// 创建单元格样式对象</span></div><div class="line">        XSSFCellStyle styleBorder = (XSSFCellStyle)wb.createCellStyle();</div><div class="line">        <span class="comment">// 设置单元格边框样式</span></div><div class="line">        styleBorder.setBorderBottom(CellStyle.BORDER_HAIR);</div><div class="line">        styleBorder.setBorderTop(CellStyle.BORDER_DASHED);</div><div class="line">        styleBorder.setBorderLeft(CellStyle.BORDER_DOUBLE);</div><div class="line">        styleBorder.setBorderRight(CellStyle.BORDER_THIN);</div><div class="line">        <span class="comment">// 设置单元格边框颜色</span></div><div class="line">        styleBorder.setBottomBorderColor(<span class="keyword">new</span> XSSFColor(Color.RED));</div><div class="line">        styleBorder.setTopBorderColor(<span class="keyword">new</span> XSSFColor(Color.GREEN));</div><div class="line">        styleBorder.setLeftBorderColor(<span class="keyword">new</span> XSSFColor(Color.BLUE));</div><div class="line">        <span class="comment">// 应用格式</span></div><div class="line">        cellBorder.setCellStyle(styleBorder);</div><div class="line"></div><div class="line">        <span class="comment">// 设置单元格的高度和宽度</span></div><div class="line">        XSSFRow rowSize = sheet.createRow(<span class="number">3</span>);</div><div class="line">        rowSize.setHeightInPoints(<span class="number">26</span>);  <span class="comment">// 设置行高</span></div><div class="line">        XSSFCell cellSize = rowSize.createCell(<span class="number">3</span>);</div><div class="line">        cellSize.setCellValue(<span class="string">"Size Style"</span>);</div><div class="line">        String cellSizeValue = <span class="string">"设置Size Style"</span>;   <span class="comment">// 字符串的长度为12，表示该字符串中有12个字符，忽略中英文</span></div><div class="line">        <span class="comment">// 设置单元格的长度为cellSizeValue的长度。而sheet.setColumnWidth使用cellSizeValue的字节数</span></div><div class="line">        <span class="comment">// cellSizeValue.getBytes().length == 14</span></div><div class="line">        sheet.setColumnWidth(<span class="number">3</span>, (cellSizeValue.getBytes().length) * <span class="number">256</span>);</div><div class="line"></div><div class="line">        <span class="comment">// 设置单元格内容对齐方式</span></div><div class="line">        XSSFRow rowAlign = sheet.createRow(<span class="number">4</span>);</div><div class="line">        XSSFCell cellAlign = rowAlign.createCell(<span class="number">4</span>);</div><div class="line">        cellBorder.setCellValue(<span class="string">"Align Style"</span>);</div><div class="line">        <span class="comment">// 创建单元格样式对象</span></div><div class="line">        XSSFCellStyle styleAlign = (XSSFCellStyle)wb.createCellStyle();</div><div class="line">        <span class="comment">// 设置单元格内容水平对其方式</span></div><div class="line">        styleAlign.setAlignment(XSSFCellStyle.ALIGN_CENTER);</div><div class="line">        <span class="comment">// 设置单元格内容垂直对其方式</span></div><div class="line">        styleAlign.setVerticalAlignment(XSSFCellStyle.VERTICAL_BOTTOM);</div><div class="line">        <span class="comment">// 应用格式</span></div><div class="line">        cellAlign.setCellStyle(styleAlign);</div><div class="line"></div><div class="line">        <span class="comment">// 设置单元格合并</span></div><div class="line">        XSSFRow rowRegion = sheet.createRow(<span class="number">5</span>);</div><div class="line">        XSSFCell cellRegion = rowAlign.createCell(<span class="number">5</span>);</div><div class="line">        cellRegion.setCellValue(<span class="string">"Region Style"</span>);</div><div class="line">        CellRangeAddress region = <span class="keyword">new</span> CellRangeAddress(<span class="number">5</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">6</span>);</div><div class="line">        sheet.addMergedRegion(region);</div><div class="line">        <span class="comment">// 创建单元格样式对象</span></div><div class="line">        XSSFCellStyle styleRegion = (XSSFCellStyle)wb.createCellStyle();</div><div class="line">        styleRegion.setAlignment(CellStyle.ALIGN_CENTER);</div><div class="line">        styleRegion.setVerticalAlignment(CellStyle.VERTICAL_CENTER);</div><div class="line">        cellRegion.setCellStyle(styleRegion);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * create a library of cell styles</div><div class="line">     * 摘录自网络上的片段，采用了Map，感谢</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> Map&lt;String, CellStyle&gt; <span class="title">createStyles</span><span class="params">(Workbook wb)</span></span>&#123;</div><div class="line">        Map&lt;String, CellStyle&gt; styles = <span class="keyword">new</span> HashMap&lt;String, CellStyle&gt;();</div><div class="line">        DataFormat df = wb.createDataFormat();</div><div class="line"></div><div class="line">        CellStyle style;</div><div class="line">        Font headerFont = wb.createFont();</div><div class="line">        headerFont.setBoldweight(Font.BOLDWEIGHT_BOLD);</div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_CENTER);</div><div class="line">        style.setFillForegroundColor(IndexedColors.LIGHT_CORNFLOWER_BLUE.getIndex());</div><div class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</div><div class="line">        style.setFont(headerFont);</div><div class="line">        styles.put(<span class="string">"header"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_CENTER);</div><div class="line">        style.setFillForegroundColor(IndexedColors.LIGHT_CORNFLOWER_BLUE.getIndex());</div><div class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</div><div class="line">        style.setFont(headerFont);</div><div class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</div><div class="line">        styles.put(<span class="string">"header_date"</span>, style);</div><div class="line"></div><div class="line">        Font font1 = wb.createFont();</div><div class="line">        font1.setBoldweight(Font.BOLDWEIGHT_BOLD);</div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</div><div class="line">        style.setFont(font1);</div><div class="line">        styles.put(<span class="string">"cell_b"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_CENTER);</div><div class="line">        style.setFont(font1);</div><div class="line">        styles.put(<span class="string">"cell_b_centered"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_RIGHT);</div><div class="line">        style.setFont(font1);</div><div class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</div><div class="line">        styles.put(<span class="string">"cell_b_date"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_RIGHT);</div><div class="line">        style.setFont(font1);</div><div class="line">        style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());</div><div class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</div><div class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</div><div class="line">        styles.put(<span class="string">"cell_g"</span>, style);</div><div class="line"></div><div class="line">        Font font2 = wb.createFont();</div><div class="line">        font2.setColor(IndexedColors.BLUE.getIndex());</div><div class="line">        font2.setBoldweight(Font.BOLDWEIGHT_BOLD);</div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</div><div class="line">        style.setFont(font2);</div><div class="line">        styles.put(<span class="string">"cell_bb"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_RIGHT);</div><div class="line">        style.setFont(font1);</div><div class="line">        style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());</div><div class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</div><div class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</div><div class="line">        styles.put(<span class="string">"cell_bg"</span>, style);</div><div class="line"></div><div class="line">        Font font3 = wb.createFont();</div><div class="line">        font3.setFontHeightInPoints((<span class="keyword">short</span>)<span class="number">14</span>);</div><div class="line">        font3.setColor(IndexedColors.DARK_BLUE.getIndex());</div><div class="line">        font3.setBoldweight(Font.BOLDWEIGHT_BOLD);</div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</div><div class="line">        style.setFont(font3);</div><div class="line">        style.setWrapText(<span class="keyword">true</span>);</div><div class="line">        styles.put(<span class="string">"cell_h"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</div><div class="line">        style.setWrapText(<span class="keyword">true</span>);</div><div class="line">        styles.put(<span class="string">"cell_normal"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_CENTER);</div><div class="line">        style.setWrapText(<span class="keyword">true</span>);</div><div class="line">        styles.put(<span class="string">"cell_normal_centered"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_RIGHT);</div><div class="line">        style.setWrapText(<span class="keyword">true</span>);</div><div class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</div><div class="line">        styles.put(<span class="string">"cell_normal_date"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</div><div class="line">        style.setIndention((<span class="keyword">short</span>)<span class="number">1</span>);</div><div class="line">        style.setWrapText(<span class="keyword">true</span>);</div><div class="line">        styles.put(<span class="string">"cell_indented"</span>, style);</div><div class="line"></div><div class="line">        style = createBorderedStyle(wb);</div><div class="line">        style.setFillForegroundColor(IndexedColors.BLUE.getIndex());</div><div class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</div><div class="line">        styles.put(<span class="string">"cell_blue"</span>, style);</div><div class="line"></div><div class="line">        <span class="keyword">return</span> styles;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> CellStyle <span class="title">createBorderedStyle</span><span class="params">(Workbook wb)</span></span>&#123;</div><div class="line">        CellStyle style = wb.createCellStyle();</div><div class="line">        style.setBorderRight(CellStyle.BORDER_THIN);</div><div class="line">        style.setRightBorderColor(IndexedColors.BLACK.getIndex());</div><div class="line">        style.setBorderBottom(CellStyle.BORDER_THIN);</div><div class="line">        style.setBottomBorderColor(IndexedColors.BLACK.getIndex());</div><div class="line">        style.setBorderLeft(CellStyle.BORDER_THIN);</div><div class="line">        style.setLeftBorderColor(IndexedColors.BLACK.getIndex());</div><div class="line">        style.setBorderTop(CellStyle.BORDER_THIN);</div><div class="line">        style.setTopBorderColor(IndexedColors.BLACK.getIndex());</div><div class="line">        <span class="keyword">return</span> style;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Record</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> String colHeaderName0;</div><div class="line">    <span class="keyword">private</span> String colHeaderName1;</div><div class="line">    <span class="keyword">private</span> String colHeaderName2;</div><div class="line">    <span class="keyword">private</span> String colHeaderName3;</div><div class="line">    <span class="keyword">private</span> String colHeaderName4;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName0</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName0;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName0</span><span class="params">(String colHeaderName0)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.colHeaderName0 = colHeaderName0;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName1</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName1;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName1</span><span class="params">(String colHeaderName1)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.colHeaderName1 = colHeaderName1;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName2</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName2;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName2</span><span class="params">(String colHeaderName2)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.colHeaderName2 = colHeaderName2;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName3</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName3;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName3</span><span class="params">(String colHeaderName3)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.colHeaderName3 = colHeaderName3;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName4</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName4;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName4</span><span class="params">(String colHeaderName4)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.colHeaderName4 = colHeaderName4;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Record</span><span class="params">()</span> </span>&#123;</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Record</span><span class="params">(String colHeaderName0, String colHeaderName1, String colHeaderName2, String colHeaderName3, String colHeaderName4)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.colHeaderName0 = colHeaderName0;</div><div class="line">        <span class="keyword">this</span>.colHeaderName1 = colHeaderName1;</div><div class="line">        <span class="keyword">this</span>.colHeaderName2 = colHeaderName2;</div><div class="line">        <span class="keyword">this</span>.colHeaderName3 = colHeaderName3;</div><div class="line">        <span class="keyword">this</span>.colHeaderName4 = colHeaderName4;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-      
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">package</span> bitBeat.QCC;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.apache.poi.ss.usermodel.*;</span><br><span class="line"><span class="keyword">import</span> org.apache.poi.ss.usermodel.Font;</span><br><span class="line"><span class="keyword">import</span> org.apache.poi.ss.util.CellRangeAddress;</span><br><span class="line"><span class="keyword">import</span> org.apache.poi.xssf.usermodel.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Color;</span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.FileOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 感谢2015.11工作上接到的任务：开发一个工具，以处理数据库里获取的数据与本地Excel表格的数据并进行对比。</span></span><br><span class="line"><span class="comment"> * 遂由此接触了JDBC，POI，XML解析，并且实践了swing界面。</span></span><br><span class="line"><span class="comment"> * Created by sure GM on 2016/8/3 23:43.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">POI</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"></span><br><span class="line">        File file = <span class="keyword">new</span> File(<span class="string">"D://yyzx.xlsx"</span>);</span><br><span class="line">        InputStream is = <span class="keyword">new</span> FileInputStream(file); <span class="comment">// 获取输入流</span></span><br><span class="line"><span class="comment">//      Workbook workbook = WorkbookFactory.create(is); // 这种方式 Excel 2003/2007/2010 都可以处理</span></span><br><span class="line">        XSSFWorkbook wb = <span class="keyword">new</span> XSSFWorkbook(is); <span class="comment">// 2007格式XSSF，2003格式HSSF</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> numSheet = <span class="number">0</span>; numSheet &lt; wb.getNumberOfSheets(); numSheet++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="number">0</span> == wb.getSheetAt(numSheet).getPhysicalNumberOfRows()) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                XSSFSheet sheet = wb.getSheetAt(numSheet);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 合并的单元格去合并</span></span><br><span class="line">                cellMergedCancel(sheet);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 空单元格填充</span></span><br><span class="line">                cellFillDown(sheet);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 删除标记有删除线的行</span></span><br><span class="line">                deleteStrikeRows(sheet);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 单元格内换行拆分</span></span><br><span class="line">                cellNewlineCancel(sheet);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> numRow = <span class="number">0</span>; numRow &lt; sheet.getLastRowNum(); numRow++) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (<span class="number">0</span> == sheet.getRow(numRow).getPhysicalNumberOfCells()) &#123;</span><br><span class="line">                        <span class="keyword">continue</span>;</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        XSSFRow row = sheet.getRow(numRow);</span><br><span class="line">                        <span class="keyword">for</span> (<span class="keyword">int</span> numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</span><br><span class="line">                            XSSFCell cell = row.getCell(numCell);</span><br><span class="line">                            String cellValue = Function.getStringNumberCellValue(cell);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        FileOutputStream os = <span class="keyword">new</span> FileOutputStream(<span class="string">"D://yyzx.xlsx"</span>);</span><br><span class="line">        wb.write(os);</span><br><span class="line">        os.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 返回构造列标题的列索引</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> sheet</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ArrayList&lt;Integer&gt; <span class="title">HeaderList</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</span><br><span class="line">        ArrayList&lt;Integer&gt; headerList = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">        Record record = <span class="keyword">new</span> Record();</span><br><span class="line">        String[] recordArray = <span class="keyword">new</span> String[]&#123;record.getColHeaderName0(), record.getColHeaderName1(), record.getColHeaderName2(), record.getColHeaderName3(), record.getColHeaderName4()&#125;;</span><br><span class="line">        <span class="keyword">int</span> colIndex = -<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        XSSFRow row = sheet.getRow(<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span> (String recordItem : recordArray) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (Function.contains_GoMX(Function.getStringNumberCellValue(row.getCell(numCell)), recordItem)) &#123;</span><br><span class="line">                    colIndex = numCell;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> headerList;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 合并的单元格去合并</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> sheet</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">cellMergedCancel</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> numMerge = sheet.getNumMergedRegions();</span><br><span class="line">        <span class="keyword">while</span> (numMerge &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            CellRangeAddress region = sheet.getMergedRegion(numMerge - <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">null</span> != region) &#123;</span><br><span class="line">                XSSFRow row = sheet.getRow(region.getFirstRow());</span><br><span class="line">                XSSFCell cell = row.getCell(region.getFirstColumn());</span><br><span class="line">                String value = Function.getStringNumberCellValue(cell);</span><br><span class="line">                sheet.removeMergedRegion(numMerge - <span class="number">1</span>);</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = region.getFirstRow(); i &lt;= region.getLastRow(); i++) &#123;</span><br><span class="line">                    cell = sheet.getRow(i).getCell(region.getFirstColumn());</span><br><span class="line">                    cell.setCellValue(value);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            numMerge = sheet.getNumMergedRegions();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 单元格向下填充</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> sheet</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">cellFillDown</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; sheet.getRow(<span class="number">0</span>).getLastCellNum(); j++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; sheet.getLastRowNum(); i++) &#123;</span><br><span class="line">                XSSFRow row = sheet.getRow(i);</span><br><span class="line">                XSSFCell cell = row.getCell(j);</span><br><span class="line">                <span class="keyword">if</span> (Function.getStringNumberCellValue(cell) != <span class="keyword">null</span> &amp;&amp; !Function.getStringNumberCellValue(cell).equals(<span class="string">""</span>)) &#123;</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    cell.setCellValue(Function.getStringNumberCellValue(sheet.getRow(i - <span class="number">1</span>).getCell(j)));</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 删除标记有删除线的行</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> sheet</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">deleteStrikeRows</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> numRow = <span class="number">0</span>; numRow &lt; sheet.getLastRowNum(); numRow++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="number">0</span> == sheet.getRow(numRow).getPhysicalNumberOfCells()) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                XSSFRow row = sheet.getRow(numRow);</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</span><br><span class="line">                    XSSFCell cell = (XSSFCell) row.getCell(numCell);</span><br><span class="line">                    XSSFCellStyle style = cell.getCellStyle();</span><br><span class="line">                    XSSFFont font = style.getFont();</span><br><span class="line">                    <span class="keyword">boolean</span> isStrikeout = font.getStrikeout();</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">if</span> (isStrikeout) &#123;</span><br><span class="line">                        sheet.removeRow(row);</span><br><span class="line">                        sheet.shiftRows(numRow + <span class="number">1</span>, sheet.getLastRowNum(), -<span class="number">1</span>);</span><br><span class="line">                        numRow--;   <span class="comment">// 避免跳行</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 单元格内换行拆分，形成多行，保证每行单元格内值唯一</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> sheet</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">cellNewlineCancel</span><span class="params">(XSSFSheet sheet)</span> </span>&#123;</span><br><span class="line">        List&lt;String&gt; valueList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> colIndex_IndiGrpID = <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> numRow = <span class="number">0</span>; numRow &lt; sheet.getLastRowNum(); numRow++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="number">0</span> == sheet.getRow(numRow).getPhysicalNumberOfCells()) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                XSSFRow row = sheet.getRow(numRow);</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</span><br><span class="line">                    XSSFCell cell = (XSSFCell) row.getCell(numCell);</span><br><span class="line">                    String value = Function.getStringNumberCellValue(cell);</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= count; i++) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (value.contains(<span class="string">"\n"</span>)) &#123;</span><br><span class="line">                            <span class="keyword">int</span> index = value.indexOf(<span class="string">"\n"</span>);</span><br><span class="line">                            valueList.add(value.substring(<span class="number">0</span>, index));</span><br><span class="line">                            value = value.replace(valueList.get(count) + <span class="string">"\n"</span>, <span class="string">""</span>);</span><br><span class="line">                        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                            valueList.add(value);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="comment">// 插入行</span></span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; count; j++) &#123;</span><br><span class="line">                        sheet.shiftRows(numRow + j + <span class="number">1</span>, sheet.getLastRowNum(), +<span class="number">1</span>);</span><br><span class="line">                        sheet.createRow(numRow + j + <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">                        <span class="keyword">for</span> (numCell = <span class="number">0</span>; numCell &lt; row.getLastCellNum(); numCell++) &#123;</span><br><span class="line">                            sheet.getRow(numRow + j + <span class="number">1</span>).createCell(numCell).setCellValue(row.getCell(numCell).getStringCellValue());</span><br><span class="line">                        &#125;</span><br><span class="line"></span><br><span class="line">                        sheet.getRow(numRow + j + <span class="number">1</span>).getCell(colIndex_IndiGrpID).setCellValue(valueList.get(j + <span class="number">1</span>));</span><br><span class="line">                    &#125;</span><br><span class="line">                    row.getCell(colIndex_IndiGrpID).setCellValue(valueList.get(<span class="number">0</span>));</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 设置单元格格式</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> wb</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">createStyle</span><span class="params">(XSSFWorkbook wb)</span> </span>&#123;</span><br><span class="line">        XSSFSheet sheet = wb.createSheet(<span class="string">"Create Cell Style"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置单元格字体格式</span></span><br><span class="line">        XSSFRow rowFont = sheet.createRow(<span class="number">0</span>);</span><br><span class="line">        XSSFCell cellFont = rowFont.createCell(<span class="number">0</span>);</span><br><span class="line">        cellFont.setCellValue(<span class="string">"Font Style"</span>);</span><br><span class="line">        <span class="comment">// 创建单元格样式对象</span></span><br><span class="line">        XSSFCellStyle styleFont = (XSSFCellStyle) wb.createCellStyle();</span><br><span class="line">        <span class="comment">// 创建字体对象</span></span><br><span class="line">        Font font = wb.createFont();</span><br><span class="line">        font.setItalic(<span class="keyword">true</span>);</span><br><span class="line">        font.setColor(Font.COLOR_RED);</span><br><span class="line">        font.setFontHeightInPoints((<span class="keyword">short</span>)<span class="number">22</span>);</span><br><span class="line">        font.setFontName(<span class="string">"XHei"</span>);</span><br><span class="line">        font.setUnderline(Font.U_DOUBLE);   <span class="comment">// 添加（Font.U_SINGLE单条下划线 / Font.U_DOUBLE双条下划线）</span></span><br><span class="line">        font.setStrikeout(<span class="keyword">true</span>);</span><br><span class="line">        <span class="comment">// 应用格式</span></span><br><span class="line">        styleFont.setFont(font);</span><br><span class="line">        cellFont.setCellStyle(styleFont);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置单元格自动换行格式</span></span><br><span class="line">        XSSFRow rowWrap = sheet.createRow(<span class="number">1</span>);</span><br><span class="line">        XSSFCell cellWrap = rowFont.createCell(<span class="number">1</span>);</span><br><span class="line">        cellWrap.setCellValue(<span class="string">"Wrap Style"</span>);</span><br><span class="line">        <span class="comment">// 创建单元格样式对象</span></span><br><span class="line">        XSSFCellStyle styleWrap = (XSSFCellStyle)wb.createCellStyle();</span><br><span class="line">        styleWrap.setWrapText(<span class="keyword">true</span>);</span><br><span class="line">        cellWrap.setCellStyle(styleWrap);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置单元格边框格式</span></span><br><span class="line">        XSSFRow rowBorder = sheet.createRow(<span class="number">2</span>);</span><br><span class="line">        XSSFCell cellBorder = rowBorder.createCell(<span class="number">2</span>);</span><br><span class="line">        cellBorder.setCellValue(<span class="string">"Border Style"</span>);</span><br><span class="line">        <span class="comment">// 创建单元格样式对象</span></span><br><span class="line">        XSSFCellStyle styleBorder = (XSSFCellStyle)wb.createCellStyle();</span><br><span class="line">        <span class="comment">// 设置单元格边框样式</span></span><br><span class="line">        styleBorder.setBorderBottom(CellStyle.BORDER_HAIR);</span><br><span class="line">        styleBorder.setBorderTop(CellStyle.BORDER_DASHED);</span><br><span class="line">        styleBorder.setBorderLeft(CellStyle.BORDER_DOUBLE);</span><br><span class="line">        styleBorder.setBorderRight(CellStyle.BORDER_THIN);</span><br><span class="line">        <span class="comment">// 设置单元格边框颜色</span></span><br><span class="line">        styleBorder.setBottomBorderColor(<span class="keyword">new</span> XSSFColor(Color.RED));</span><br><span class="line">        styleBorder.setTopBorderColor(<span class="keyword">new</span> XSSFColor(Color.GREEN));</span><br><span class="line">        styleBorder.setLeftBorderColor(<span class="keyword">new</span> XSSFColor(Color.BLUE));</span><br><span class="line">        <span class="comment">// 应用格式</span></span><br><span class="line">        cellBorder.setCellStyle(styleBorder);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置单元格的高度和宽度</span></span><br><span class="line">        XSSFRow rowSize = sheet.createRow(<span class="number">3</span>);</span><br><span class="line">        rowSize.setHeightInPoints(<span class="number">26</span>);  <span class="comment">// 设置行高</span></span><br><span class="line">        XSSFCell cellSize = rowSize.createCell(<span class="number">3</span>);</span><br><span class="line">        cellSize.setCellValue(<span class="string">"Size Style"</span>);</span><br><span class="line">        String cellSizeValue = <span class="string">"设置Size Style"</span>;   <span class="comment">// 字符串的长度为12，表示该字符串中有12个字符，忽略中英文</span></span><br><span class="line">        <span class="comment">// 设置单元格的长度为cellSizeValue的长度。而sheet.setColumnWidth使用cellSizeValue的字节数</span></span><br><span class="line">        <span class="comment">// cellSizeValue.getBytes().length == 14</span></span><br><span class="line">        sheet.setColumnWidth(<span class="number">3</span>, (cellSizeValue.getBytes().length) * <span class="number">256</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置单元格内容对齐方式</span></span><br><span class="line">        XSSFRow rowAlign = sheet.createRow(<span class="number">4</span>);</span><br><span class="line">        XSSFCell cellAlign = rowAlign.createCell(<span class="number">4</span>);</span><br><span class="line">        cellBorder.setCellValue(<span class="string">"Align Style"</span>);</span><br><span class="line">        <span class="comment">// 创建单元格样式对象</span></span><br><span class="line">        XSSFCellStyle styleAlign = (XSSFCellStyle)wb.createCellStyle();</span><br><span class="line">        <span class="comment">// 设置单元格内容水平对其方式</span></span><br><span class="line">        styleAlign.setAlignment(XSSFCellStyle.ALIGN_CENTER);</span><br><span class="line">        <span class="comment">// 设置单元格内容垂直对其方式</span></span><br><span class="line">        styleAlign.setVerticalAlignment(XSSFCellStyle.VERTICAL_BOTTOM);</span><br><span class="line">        <span class="comment">// 应用格式</span></span><br><span class="line">        cellAlign.setCellStyle(styleAlign);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置单元格合并</span></span><br><span class="line">        XSSFRow rowRegion = sheet.createRow(<span class="number">5</span>);</span><br><span class="line">        XSSFCell cellRegion = rowAlign.createCell(<span class="number">5</span>);</span><br><span class="line">        cellRegion.setCellValue(<span class="string">"Region Style"</span>);</span><br><span class="line">        CellRangeAddress region = <span class="keyword">new</span> CellRangeAddress(<span class="number">5</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">6</span>);</span><br><span class="line">        sheet.addMergedRegion(region);</span><br><span class="line">        <span class="comment">// 创建单元格样式对象</span></span><br><span class="line">        XSSFCellStyle styleRegion = (XSSFCellStyle)wb.createCellStyle();</span><br><span class="line">        styleRegion.setAlignment(CellStyle.ALIGN_CENTER);</span><br><span class="line">        styleRegion.setVerticalAlignment(CellStyle.VERTICAL_CENTER);</span><br><span class="line">        cellRegion.setCellStyle(styleRegion);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * create a library of cell styles</span></span><br><span class="line"><span class="comment">     * 摘录自网络上的片段，采用了Map，感谢</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> Map&lt;String, CellStyle&gt; <span class="title">createStyles</span><span class="params">(Workbook wb)</span></span>&#123;</span><br><span class="line">        Map&lt;String, CellStyle&gt; styles = <span class="keyword">new</span> HashMap&lt;String, CellStyle&gt;();</span><br><span class="line">        DataFormat df = wb.createDataFormat();</span><br><span class="line"></span><br><span class="line">        CellStyle style;</span><br><span class="line">        Font headerFont = wb.createFont();</span><br><span class="line">        headerFont.setBoldweight(Font.BOLDWEIGHT_BOLD);</span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_CENTER);</span><br><span class="line">        style.setFillForegroundColor(IndexedColors.LIGHT_CORNFLOWER_BLUE.getIndex());</span><br><span class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</span><br><span class="line">        style.setFont(headerFont);</span><br><span class="line">        styles.put(<span class="string">"header"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_CENTER);</span><br><span class="line">        style.setFillForegroundColor(IndexedColors.LIGHT_CORNFLOWER_BLUE.getIndex());</span><br><span class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</span><br><span class="line">        style.setFont(headerFont);</span><br><span class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</span><br><span class="line">        styles.put(<span class="string">"header_date"</span>, style);</span><br><span class="line"></span><br><span class="line">        Font font1 = wb.createFont();</span><br><span class="line">        font1.setBoldweight(Font.BOLDWEIGHT_BOLD);</span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</span><br><span class="line">        style.setFont(font1);</span><br><span class="line">        styles.put(<span class="string">"cell_b"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_CENTER);</span><br><span class="line">        style.setFont(font1);</span><br><span class="line">        styles.put(<span class="string">"cell_b_centered"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_RIGHT);</span><br><span class="line">        style.setFont(font1);</span><br><span class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</span><br><span class="line">        styles.put(<span class="string">"cell_b_date"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_RIGHT);</span><br><span class="line">        style.setFont(font1);</span><br><span class="line">        style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());</span><br><span class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</span><br><span class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</span><br><span class="line">        styles.put(<span class="string">"cell_g"</span>, style);</span><br><span class="line"></span><br><span class="line">        Font font2 = wb.createFont();</span><br><span class="line">        font2.setColor(IndexedColors.BLUE.getIndex());</span><br><span class="line">        font2.setBoldweight(Font.BOLDWEIGHT_BOLD);</span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</span><br><span class="line">        style.setFont(font2);</span><br><span class="line">        styles.put(<span class="string">"cell_bb"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_RIGHT);</span><br><span class="line">        style.setFont(font1);</span><br><span class="line">        style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());</span><br><span class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</span><br><span class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</span><br><span class="line">        styles.put(<span class="string">"cell_bg"</span>, style);</span><br><span class="line"></span><br><span class="line">        Font font3 = wb.createFont();</span><br><span class="line">        font3.setFontHeightInPoints((<span class="keyword">short</span>)<span class="number">14</span>);</span><br><span class="line">        font3.setColor(IndexedColors.DARK_BLUE.getIndex());</span><br><span class="line">        font3.setBoldweight(Font.BOLDWEIGHT_BOLD);</span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</span><br><span class="line">        style.setFont(font3);</span><br><span class="line">        style.setWrapText(<span class="keyword">true</span>);</span><br><span class="line">        styles.put(<span class="string">"cell_h"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</span><br><span class="line">        style.setWrapText(<span class="keyword">true</span>);</span><br><span class="line">        styles.put(<span class="string">"cell_normal"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_CENTER);</span><br><span class="line">        style.setWrapText(<span class="keyword">true</span>);</span><br><span class="line">        styles.put(<span class="string">"cell_normal_centered"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_RIGHT);</span><br><span class="line">        style.setWrapText(<span class="keyword">true</span>);</span><br><span class="line">        style.setDataFormat(df.getFormat(<span class="string">"d-mmm"</span>));</span><br><span class="line">        styles.put(<span class="string">"cell_normal_date"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setAlignment(CellStyle.ALIGN_LEFT);</span><br><span class="line">        style.setIndention((<span class="keyword">short</span>)<span class="number">1</span>);</span><br><span class="line">        style.setWrapText(<span class="keyword">true</span>);</span><br><span class="line">        styles.put(<span class="string">"cell_indented"</span>, style);</span><br><span class="line"></span><br><span class="line">        style = createBorderedStyle(wb);</span><br><span class="line">        style.setFillForegroundColor(IndexedColors.BLUE.getIndex());</span><br><span class="line">        style.setFillPattern(CellStyle.SOLID_FOREGROUND);</span><br><span class="line">        styles.put(<span class="string">"cell_blue"</span>, style);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> styles;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> CellStyle <span class="title">createBorderedStyle</span><span class="params">(Workbook wb)</span></span>&#123;</span><br><span class="line">        CellStyle style = wb.createCellStyle();</span><br><span class="line">        style.setBorderRight(CellStyle.BORDER_THIN);</span><br><span class="line">        style.setRightBorderColor(IndexedColors.BLACK.getIndex());</span><br><span class="line">        style.setBorderBottom(CellStyle.BORDER_THIN);</span><br><span class="line">        style.setBottomBorderColor(IndexedColors.BLACK.getIndex());</span><br><span class="line">        style.setBorderLeft(CellStyle.BORDER_THIN);</span><br><span class="line">        style.setLeftBorderColor(IndexedColors.BLACK.getIndex());</span><br><span class="line">        style.setBorderTop(CellStyle.BORDER_THIN);</span><br><span class="line">        style.setTopBorderColor(IndexedColors.BLACK.getIndex());</span><br><span class="line">        <span class="keyword">return</span> style;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Record</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String colHeaderName0;</span><br><span class="line">    <span class="keyword">private</span> String colHeaderName1;</span><br><span class="line">    <span class="keyword">private</span> String colHeaderName2;</span><br><span class="line">    <span class="keyword">private</span> String colHeaderName3;</span><br><span class="line">    <span class="keyword">private</span> String colHeaderName4;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName0</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName0</span><span class="params">(String colHeaderName0)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName0 = colHeaderName0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName1;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName1</span><span class="params">(String colHeaderName1)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName1 = colHeaderName1;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName2</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName2;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName2</span><span class="params">(String colHeaderName2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName2 = colHeaderName2;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName3</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName3;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName3</span><span class="params">(String colHeaderName3)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName3 = colHeaderName3;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColHeaderName4</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.colHeaderName4;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColHeaderName4</span><span class="params">(String colHeaderName4)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName4 = colHeaderName4;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Record</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Record</span><span class="params">(String colHeaderName0, String colHeaderName1, String colHeaderName2, String colHeaderName3, String colHeaderName4)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName0 = colHeaderName0;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName1 = colHeaderName1;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName2 = colHeaderName2;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName3 = colHeaderName3;</span><br><span class="line">        <span class="keyword">this</span>.colHeaderName4 = colHeaderName4;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
-    <div>
-      
-        
-      
-    </div>
+    
+    
+    
 
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-
-      
-        <div class="post-nav">
-		
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/08/05/Java-JDBC/" rel="prev" title="Java JDBC">
-                <i class="fa fa-chevron-left"></i> Java JDBC
-              </a>
-            
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/JAVA/" rel="tag"># JAVA</a>
+              <a href="/tags/POI/" rel="tag"># POI</a>
+              <a href="/tags/EXCEL/" rel="tag"># EXCEL</a>
           </div>
 
-          <div class="post-nav-prev post-nav-item">
-		    
-              <a href="/2016/07/29/ONE-PIECE-of-SWIMMING-ADVENTURE/" rel="next" title="ONE PIECE of SWIMMING 冒险游记">
-                ONE PIECE of SWIMMING 冒险游记 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-		  
-        </div>
-      
+        
 
-      
-      
-    </footer>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2016/07/29/ONE-PIECE-of-SWIMMING-ADVENTURE/" rel="prev" title="ONE PIECE of SWIMMING 冒险游记">
+      <i class="fa fa-chevron-left"></i> ONE PIECE of SWIMMING 冒险游记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2016/08/05/Java-JDBC/" rel="next" title="Java JDBC">
+      Java JDBC <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
   </article>
+  
+  
+  
 
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
 
 
           </div>
           
 
-
-          
-  <div class="comments" id="comments">
-    
-      <div class="fb-comments"
-           data-href="http://GoMX.win/2016/08/05/Java-POI/"
-           data-numposts="10">
-      </div>
-    
-	<br/>
-  </div>
-
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
-        
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            TOC
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            ABOUT
-          </li>
-        </ul>
-      
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
 
-      <section class="site-overview sidebar-panel ">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-		  <a href="http://gomx.win/about">
-            <img class="site-author-image" itemprop="image"
-               src="/images/sure.png"
-               alt="sureGM" />
-		  </a>
-          <p class="site-author-name" itemprop="name">sureGM</p>
-          <p class="site-description motion-element" itemprop="description">LIFE IS SHORT. LOVE WHAT YOU LOVED.</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-<!--            <a href="/">  -->
-			<a href="http://gomx.win/archives">
-              <span class="site-state-item-count">40</span>
-              <span class="site-state-item-name">archives</span>
-            </a>
-          </div>
+    <img class="site-author-image" itemprop="image" alt="sureGM"
+      src="/images/sure.png">
+  <p class="site-author-name" itemprop="name">sureGM</p>
+  <div class="site-description" itemprop="description">LIFE IS SHORT. LOVE WHAT YOU LOVED.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">40</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/sureGM" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;sureGM" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/sureGM" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;sureGM" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/suregm" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;suregm" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
 
-          
-            <div class="site-state-item site-state-categories">
-<!--              <a href="/">  -->
-			  	<a href="http://gomx.win/categories">
-                <span class="site-state-item-count">19</span>
-                <span class="site-state-item-name">categories</span>
-              </a>
-            </div>
-          
 
-          
-            <div class="site-state-item site-state-tags">
-<!--              <a href="/">  -->
-			  <a href="http://gomx.win/tags">
-                <span class="site-state-item-count">31</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://leetcode.com/" title="https:&#x2F;&#x2F;leetcode.com&#x2F;" rel="noopener" target="_blank">LeetCode</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://iissnan.com/progit/" title="http:&#x2F;&#x2F;iissnan.com&#x2F;progit&#x2F;" rel="noopener" target="_blank">Git</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.tutorialspoint.com/java/" title="http:&#x2F;&#x2F;www.tutorialspoint.com&#x2F;java&#x2F;" rel="noopener" target="_blank">Java</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" title="http:&#x2F;&#x2F;www.liaoxuefeng.com&#x2F;wiki&#x2F;0014316089557264a6b348958f449949df42a6d3a2e542c000" rel="noopener" target="_blank">Python</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.shiyanlou.com/" title="https:&#x2F;&#x2F;www.shiyanlou.com&#x2F;" rel="noopener" target="_blank">WebIDE ShiYanLou</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://ide.coding.net/" title="https:&#x2F;&#x2F;ide.coding.net&#x2F;" rel="noopener" target="_blank">WebIDE Coding</a>
+        </li>
+    </ul>
+  </div>
 
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/sureGM" target="_blank" title="Github">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  Github
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://facebook.com/sureGM" target="_blank" title="Facebook">
-                  
-                    <i class="fa fa-fw fa-facebook"></i>
-                  
-                  Facebook
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/sureGM" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-heart"></i>
-              Links
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="https://leetcode.com/" title="LeetCode" target="_blank">LeetCode</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://iissnan.com/progit/" title="Git" target="_blank">Git</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.tutorialspoint.com/java/" title="Java" target="_blank">Java</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" title="Python" target="_blank">Python</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="https://www.shiyanlou.com/" title="WebIDE ShiYanLou" target="_blank">WebIDE ShiYanLou</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="https://ide.coding.net/" title="WebIDE Coding" target="_blank">WebIDE Coding</a>
-                </li>
-              
-            </ul>
-          </div>
-        
-
-      </section>
-
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
-            
-          </div>
-        </section>
-      
+      </div>
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        
+
+        
+
+<div class="copyright">
   <span>deepBLUE<br/></span>
   <span>Be the blue whale<br/></span>
   
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2019</span>
-
-<!--  <span class="with-love">
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+<!--
+  <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
 -->
@@ -751,20 +466,12 @@
 </div>
 
 <!--
-<div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io" target="_blank">Hexo</a>
-</div>
-
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank">
-    NexT.Mist
-  </a>
-</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
 -->
 
-<table border='0' cellspacing="0" cellpadding="0" style="margin-top: 0px; margin-bottom: 0px; border: 0px; background-color: #f5f5f5;">
-  <tr style="background-color: #f5f5f5;">
+<table border='0' cellspacing="0" cellpadding="0" style="margin-top: 0px; margin-bottom: 0px; border: 0px; background-color: #eee;">
+  <tr style="background-color: #eee;">
     <td style="width:48%; text-align:right; border:0; padding: 0px;">
       Powered by <a class="theme-link" href="http://hexo.io" target="_blank" style="font-weight: bold">Hexo</a>
     </td>
@@ -774,12 +481,6 @@
     </td>
 
     <td style="width:48%; text-align:left; border:0; padding: 0px;">
-<!--     Theme -
-     <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank">
-       NexT.Mist
-     </a>
-     Hosted by  <a class="theme-link" href="https://pages.coding.net" target="_blank">Coding Pages</a>
--->
 			Hosted by <a href="https://pages.coding.me" target="_blank" style="font-weight: bold">Coding</a>
     </td>
 
@@ -787,58 +488,129 @@
 </table>
 
         
-
 <div class="busuanzi-count">
-
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <!--
-  
-    <span class="site-uv"><span class="busuanzi-value" id="busuanzi_value_site_uv"></span><i class="fa fa-user"></i></span>
-  
-
-  
-    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
-  
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
 -->
 
-<table border='0' cellspacing="0" cellpadding="0" style="margin-top: 0px; margin-bottom: 0px; border: 0px; background-color: #f5f5f5;">
-  <tr style="background-color: #f5f5f5;">
+<table border='0' cellspacing="0" cellpadding="0" style="margin-top: 0px; margin-bottom: 0px; border: 0px; background-color: #eee;">
+  <tr style="background-color: #eee;">
     <td style="width:48%; text-align:right; border:0; padding: 0px;">
-      
-        <span class="site-uv"><span class="busuanzi-value" id="busuanzi_value_site_uv"></span><i class="fa fa-user"></i></span>
-      
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+		  <span class="site-uv" title="Total Visitors">
+			<span id="busuanzi_value_site_uv"></span>
+		  </span>
+		  <span class="post-meta-item-icon">
+			<i class="fa fa-user"></i>
+		  </span>
+		</span>
     </td>
     <td style="width:6%; text-align:center; border:0; padding-top: 0px; padding-bottom: 0px;">
     |
     </td>
     <td style="width:48%; text-align:left; border:0; padding: 0px;">
-     
-        <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
-      
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+		  <span class="post-meta-item-icon">
+			<i class="fa fa-eye"></i>
+		  </span>
+		  <span class="site-pv" title="Total Views">
+			<span id="busuanzi_value_site_pv"></span>
+		  </span>
+		</span>
     </td>
   </tr>
 </table>
-
+  
 </div>
 
 
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1259802754&web_id=1259802754"></script>
+  </div>
 
-        
+
+
+
+
+
       </div>
     </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
   </div>
 
   
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  <script>
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','RfraAyLFbRD8yJXssUXg','2.0.0');
 </script>
 
 
@@ -849,243 +621,15 @@
 
 
 
-  
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-
-
-  
-
-    <script type="text/javascript">
-      var disqus_shortname = 'isure';
-      var disqus_identifier = '2016/08/05/Java-POI/';
-      var disqus_title = "Java POI";
-      var disqus_url = 'http://GoMX.win/2016/08/05/Java-POI/';
-
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-
-      run_disqus_script('count.js');
-      
-        run_disqus_script('embed.js');
-      
-    </script>
-  
 
 
 
 
   
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';                
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
-                            
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
-
-    // handle and trigger popup window;
-    $('.popup-trigger').mousedown(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-
-    });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
-
-  
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-  </script>
-
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-    });
-  </script>
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 
   
 
   
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
-</script>
-
 
 </body>
 </html>
